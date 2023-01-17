@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
@@ -15,9 +15,9 @@ module.exports = {
         '--nc-caution': '#f69113',
         '--nc-caution-bg': '#fff8e4',
         '--nc-success': '#30b566',
-        '--nc-success-bg': '#f7fffe'
-      }
-    }
+        '--nc-success-bg': '#f7fffe',
+      },
+    },
   },
-  plugins: []
+  plugins: [],
 };
