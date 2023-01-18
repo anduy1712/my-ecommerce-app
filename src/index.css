@@ -176,5 +176,8 @@
   font-family: Helvetica Neue, Arial, sans-serif;
 }
 
+body {
+  display: unset;
+}
 
 
