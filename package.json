@@ -7,9 +7,9 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix .",
-    "format": "prettier --write \"src/**/*.ts\""
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "postinstall": "husky install"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.1",
@@ -40,12 +40,21 @@
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.32.1",
+    "husky": "^8.0.3",
     "json-loader": "^0.5.7",
+    "lint-staged": "^13.1.0",
     "postcss": "^8.4.21",
     "prettier": "^2.8.3",
     "tailwindcss": "^3.2.4",
     "typescript": "*",
     "vite": "^4.0.0",
     "vite-tsconfig-paths": "^4.0.3"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "yarn lint",
+      "yarn format",
+      "git add ."
+    ]
   }
 }
