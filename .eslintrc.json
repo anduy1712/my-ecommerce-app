@@ -7,6 +7,8 @@
     "extends": [
         "airbnb",
         "airbnb-typescript",
+        "airbnb/hooks",
+        "plugin:@typescript-eslint/recommended",
         "plugin:import/typescript",
         "prettier"
     ],
@@ -23,5 +25,10 @@
         "react",
         "@typescript-eslint"
     ],
-    "rules": {}
+    "rules": {
+        "semi": [
+            2,
+            "always"
+        ]
+    }
 }

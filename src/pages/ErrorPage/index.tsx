@@ -1,8 +1,9 @@
 import React from 'react';
 import { useRouteError } from 'react-router-dom';
+import { FixMeLater } from 'src/utils';
 
 function ErrorPage() {
-  const error: any = useRouteError();
+  const error: FixMeLater = useRouteError();
 
   return (
     <div id="error-page">
