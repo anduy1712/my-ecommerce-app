@@ -23,6 +23,8 @@
     "sort-by": "^1.2.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
     "@redux-devtools/core": "^3.13.1",
     "@types/node": "^18.11.18",
     "@types/react": "^18.0.26",
